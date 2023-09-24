@@ -1,1 +1,3 @@
-document.onload = () => {};
+document.addEventListener("DOMContentLoaded", () => {
+
+})
