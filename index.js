@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const AMultiplyB_result = AMultiplyB(value_A, value_B);
       const ADivideB_result = ADivideB(value_A, value_B);
 
-      APlusB_result_label.append([APlusB_result]);
-      AMinusB_result_label.append([AMinusB_result]);
-      AMultiplyB_result_label.append([AMultiplyB_result]);
-      ADivideB_result_label.append([ADivideB_result]);
+      APlusB_result_label.innerHTML = `[${APlusB_result.toString()}]`;
+      AMinusB_result_label.innerHTML = `[${AMinusB_result.toString()}]`;
+      AMultiplyB_result_label.innerHTML = `[${AMultiplyB_result.toString()}]`;
+      ADivideB_result_label.innerHTML = `[${ADivideB_result.toString()}]`;
     }
   });
 
