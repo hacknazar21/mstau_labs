@@ -17,12 +17,32 @@
       B = [10, 20]
     </p>
     <h2>Программа</h2>
-    <label for="value_A">Введите значения А через запятую</label>
+    <label id="value_A_label" for="value_A"
+      >Введите значения А через запятую</label
+    >
     <input type="text" id="value_A" />
     <br />
     <br />
-    <label for="value_B">Введите значения B через запятую</label>
+    <label id="value_B_label" for="value_B"
+      >Введите значения B через запятую</label
+    >
     <input type="text" id="value_B" />
+    <br />
+    <br />
+    <button id="calculate_button">Рассчитать</button>
+    <br />
+    <br />
+    <h2>Результат</h2>
+    <div id="result_box">
+      <h3>A + B</h3>
+      <p id="APlusB_result"></p>
+      <h3>A - B</h3>
+      <p id="AMinusB_result"></p>
+      <h3>A * B</h3>
+      <p id="AMultiplyB_result"></p>
+      <h3>A / B</h3>
+      <p id="ADivideB_result"></p>
+    </div>
   </body>
   <script type="text/javascript" src="./index.js"></script>
 </html>
