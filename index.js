@@ -31,8 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
       is_error = true;
     }
     if (!is_error) {
-      const value_A = value_A_input_value.replaceAll(" ", "").split(",");
-      const value_B = value_B_input_value.replaceAll(" ", "").split(",");
+      const value_A = value_A_input_value
+        .replaceAll(" ", "")
+        .split(",")
+        .map((value) => Number(value));
+      const value_B = value_B_input_value
+        .replaceAll(" ", "")
+        .split(",")
+        .map((value) => Number(value));
 
       const APlusB_result = APlusB(value_A, value_B);
       const AMinusB_result = AMinusB(value_A, value_B);
