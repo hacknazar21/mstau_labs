@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>МСТАУ Лабораторные</title>
+  </head>
+  <body>
+    <h1>Лабораторная работа №2</h1>
+    <h2>Задание</h2>
+    <p>
+      Построить алгоритм и написать программу на любом языке программирования
+      для вычисления A<sup>-1</sup>
+    </p>
+    <h2>Вариант 7 (1)</h2>
+    <p>
+      A = 1,2;2,3;0,2;6,7 <br />
+      B = 1,3;−2,0;0,5;1,7
+    </p>
+    <h2>Программа</h2>
+    <label id="value_A_label" for="value_A"
+      >Введите значения А через запятую</label
+    >
+    <input value="1,2;2,3;0,2;6,7" type="text" id="value_A" />
+    <br />
+    <br />
+    <label id="value_B_label" for="value_B"
+      >Введите значения B через запятую</label
+    >
+    <input value="1,3;−2,0;0,5;1,7" type="text" id="value_B" />
+    <br />
+    <br />
+    <button id="calculate_button">Рассчитать</button>
+    <br />
+    <br />
+    <h2>Результат</h2>
+    <div id="result_box">
+      <h3>A<sup>-1</sup></h3>
+      <p id="ATrans_result"></p>
+      <h3>B<sup>-1</sup></h3>
+      <p id="BTrans_result"></p>
+    </div>
+  </body>
+  <script type="text/javascript" src="./index.js"></script>
+</html>
